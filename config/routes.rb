@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    get 'hello_world', to: 'static#hello_world'
+
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
