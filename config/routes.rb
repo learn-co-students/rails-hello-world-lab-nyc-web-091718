@@ -1,9 +1,20 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  get "hello_world", to: "static#hello_world"
+
+  # Integrate a route for `localhost:3000/hello_world`.
+  # * Create a static controller that inherits from the application controller and contains the `hello_world` action. You can have the call to the view file occur using either the implicit or explicit processes.
+  # * Create a file in the `views` directory that will be called by the static controller's `hello_world` action, and add the heading `<h1>Hello World</h1>` to the file. The test is case sensitive, so make sure you enter it _exactly_ as shown.
+
+
+
+  
+  #
+  # # The priority is based upon order of creation: first created -> highest priority.
+  # # See how all your routes lay out with "rake routes".
+  #
+  # # You can have the root of your site routed with "root"
+  # # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
